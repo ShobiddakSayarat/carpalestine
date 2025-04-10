@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>إضافة مركبة للبيع</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,26 +12,25 @@
     <nav>
       <a href="index.html">الرئيسية</a>
       <a href="market.html">معرض السيارات</a>
-      <a href="add-car.html">إضافة مركبة للبيع</a>
+      <a href="add-car.html">إضافة مركبة</a>
       <a href="contact.html">اتصل بنا</a>
     </nav>
   </header>
-
   <main>
-    <form>
-      <label>نوع المركبة:</label><br/>
-      <select><option>هيونداي</option><option>تويوتا</option></select><br/><br/>
-      <label>طراز المركبة:</label><br/>
-      <select><option>سوناتا</option><option>كورولا</option></select><br/><br/>
-      <label>سنة الإنتاج:</label><input type="number"/><br/><br/>
-      <label>اللون:</label><input type="text"/><br/><br/>
-      <label>رقم الهاتف:</label><input type="text"/><br/><br/>
-      <input type="submit" value="نشر الإعلان" />
+    <form class="add-form">
+      <label>نوع الشركة: <input type="text" required></label>
+      <label>موديل المركبة: <input type="text" required></label>
+      <label>سنة الإنتاج: <input type="number" required></label>
+      <label>السعر: <input type="number" required></label>
+      <label>الموقع: <input type="text" required></label>
+      <label>رقم الهاتف: <input type="tel" required></label>
+      <label>وصف إضافي: <textarea></textarea></label>
+      <label>صورة المركبة: <input type="file" accept="image/*" required></label>
+      <button type="submit">نشر المركبة</button>
     </form>
   </main>
-
   <footer>
-    <p>&copy; 2025 شو بدك سيارات</p>
+    <p>© 2025 شو بدك سيارات</p>
   </footer>
 </body>
 </html>

@@ -1,26 +1,69 @@
 body {
-  font-family: Arial, sans-serif;
-  direction: rtl;
+  font-family: 'Tahoma', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #f4f6f8;
+  color: #333;
 }
+
 header {
-  background: #0077cc;
+  background-color: #0072c6;
   color: white;
-  padding: 1em;
+  padding: 1rem;
   text-align: center;
 }
-nav a {
-  margin: 0 10px;
+
+header nav a {
   color: white;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
+
 main {
-  padding: 20px;
+  padding: 2rem;
 }
+
 footer {
-  background: #eee;
+  background: #e1e1e1;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #0072c6;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
 }
